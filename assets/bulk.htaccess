@@ -1,0 +1,7 @@
+# Block all access to the assets folder by default
+Deny from all
+
+# Allow access to specific file types if needed (e.g., images)
+<FilesMatch "\.(jpg|jpeg|png|gif|css|js)$">
+    Allow from all
+</FilesMatch>
